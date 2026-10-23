@@ -7,7 +7,7 @@ def book(label, cls="btn"):
     return f'<a class="{cls}" href="{BOOK}" target="_blank" rel="noopener">{label}</a>'
 
 gallery = "\n".join(
-    f'''<a class="g-item{' g-wide' if i in (0,9,24) else ''}" href="img/full/{p["n"]}.jpg" data-webp="img/full/{p["n"]}.webp" data-cap="{html.escape(p["cap"])}" data-i="{i}">
+    f'''<a class="g-item{' g-wide' if i in (0,4,17,30) else ''}" href="img/full/{p["n"]}.jpg" data-webp="img/full/{p["n"]}.webp" data-cap="{html.escape(p["cap"])}" data-i="{i}">
   <picture><source srcset="img/thumb/{p["n"]}.webp" type="image/webp"><img src="img/thumb/{p["n"]}.jpg" alt="{html.escape(p["cap"])}" width="{p["tw"]}" height="{p["th"]}" loading="lazy" decoding="async"></picture></a>'''
     for i, p in enumerate(photos))
 
@@ -61,7 +61,7 @@ page = f'''<!doctype html>
 <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32.png">
 <link rel="apple-touch-icon" href="logo/apple-touch-icon.png">
 <link rel="preload" as="image" href="img/hero-mobile.webp" media="(max-width: 767px)">
-<link rel="preload" as="image" href="img/full/rs-01.webp" media="(min-width: 768px)">
+<link rel="preload" as="image" href="img/hero-desktop.webp" media="(min-width: 768px)">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">{json.dumps({
  "@context":"https://schema.org","@type":"VacationRental","name":"River Solace",
@@ -87,27 +87,26 @@ page = f'''<!doctype html>
   <picture class="hero-bg">
     <source media="(max-width: 767px)" srcset="img/hero-mobile.webp" type="image/webp">
     <source media="(max-width: 767px)" srcset="img/hero-mobile.jpg">
-    <source srcset="img/full/rs-01.webp" type="image/webp">
-    <img src="img/full/rs-01.jpg" alt="River Solace log cabin on the bank of the Ellijay River" fetchpriority="high">
+    <source srcset="img/hero-desktop.webp" type="image/webp">
+    <img src="img/hero-desktop.jpg" alt="River Solace's deck, covered porch and hot tub right on the bank of the Ellijay River" fetchpriority="high" width="1920" height="1028">
   </picture>
-  <div class="hero-inner">
-    <div class="hero-card">
-      <picture><source srcset="logo/logo-riversolace.webp" type="image/webp"><img class="hero-logo" src="logo/logo-riversolace.png" alt="River Solace &mdash; Ellijay, Georgia" width="640" height="587"></picture>
-      <p class="hero-tag">A private log cabin on the Ellijay River, made for slow mornings and starry nights.</p>
-      <ul class="facts" aria-label="Quick facts">
-        <li>2 bedrooms</li><li>2 baths</li><li>Sleeps 4 adults</li><li>2 dogs welcome</li><li>Hot tub</li>
-      </ul>
-      {book("Check Availability")}
-      <p class="fine">Reservations handled by Sliding Rock Cabins</p>
+  <div class="hero-bar">
+    <div class="hero-text">
+      <p class="hero-title">Riverfront log cabin &middot; Ellijay, GA</p>
+      <p class="hero-sub">2 BR &middot; 2 BA &middot; 4 adults &middot; dogs welcome &middot; hot tub</p>
+    </div>
+    <div class="hero-cta">
+      {book("Check Availability","btn btn-hero")}
+      <span class="fine hero-fine">Reservations handled by Sliding Rock Cabins</span>
     </div>
   </div>
-  <a class="scroll-cue" href="#stay" aria-label="Scroll to learn more">&#8964;</a>
 </section>
 
 <main>
 <section class="section intro" id="stay">
   <div class="wrap two-col">
     <div>
+      <picture><source srcset="logo/logo-riversolace.webp" type="image/webp"><img class="intro-logo" src="logo/logo-riversolace.png" alt="River Solace &mdash; Ellijay, Georgia" width="640" height="587" loading="lazy"></picture>
       <p class="eyebrow">Welcome to River Solace</p>
       <h1>Your own quiet bend of the river</h1>
       <p>Tucked at the very end of a wooded road outside Ellijay, River Solace is a true full-log cabin with the river running right past the porch. The loudest thing you&rsquo;ll hear is the water.</p>
@@ -116,7 +115,7 @@ page = f'''<!doctype html>
       <p class="note">Good to know: the last stretch is on gravel mountain roads. Four-wheel drive isn&rsquo;t required, but take it slow and steady.</p>
     </div>
     <figure class="intro-photo">
-      <picture><source srcset="img/full/rs-08.webp" type="image/webp"><img src="img/full/rs-08.jpg" alt="Rocking chairs on the covered porch overlooking the river" loading="lazy" width="1366" height="768"></picture>
+      <picture><source srcset="img/full/rs-03.webp" type="image/webp"><img src="img/full/rs-03.jpg" alt="Deck seating over the river" loading="lazy" width="1366" height="768"></picture>
     </figure>
   </div>
 </section>
@@ -205,7 +204,7 @@ page = f'''<!doctype html>
 
 <footer class="footer">
   <p>River Solace &middot; Ellijay, Georgia &middot; GA STR Host License #002890</p>
-  <p class="fine">&copy; 2026 River Solace</p>
+  <p class="fine">Photos courtesy of Sliding Rock Cabins &middot; &copy; 2026 River Solace</p>
 </footer>
 
 <div class="mobile-book">{book("Check Availability","btn btn-block")}</div>
