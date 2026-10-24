@@ -12,18 +12,18 @@ gallery = "\n".join(
     for i, p in enumerate(photos))
 
 amen = [
- ("🌊","Right on the Ellijay River","Fish from the deck or wade in from the yard"),
- ("♨️","Private hot tub","Robes provided for starry-night soaks"),
- ("🔥","Riverside fire pit","Plus a gas grill and picnic table"),
- ("🪑","Covered porch","Four rocking chairs facing the water"),
- ("🛏️","Two king beds","Main-level king &amp; upstairs loft king"),
- ("🛁","Two bathrooms","Spa-quality soap, towels &amp; hair dryers"),
- ("🐕","Dogs welcome","Up to 2 dogs, fenced yard, no pet fee"),
- ("🪵","Gas log fireplace","Cozy living room with 55&Prime; smart TV"),
- ("📺","Media / reading room","Sofa &amp; TV with FireStick; NFL package"),
- ("🍳","Full kitchen","Dishwasher, coffee grinder &amp; beans, cookware"),
- ("📶","Free Wi-Fi","Central heat &amp; air, washer &amp; dryer"),
- ("🔑","Keyless self check-in","Electronic lock for easy arrivals"),
+ ("🌊","On the Ellijay River","Waterfront at the end of a private road"),
+ ("🎣","Fish from the deck","Cast a line right off the porch"),
+ ("🔥","Riverside fire pit","Gas grill &amp; picnic table with extra lighting"),
+ ("🪑","Big covered porch","Four rocking chairs looking out on the water"),
+ ("🛏️","Two king beds","Pillow-top king on the main level, king in the loft"),
+ ("🛁","Two bathrooms","Spa-quality soap, towels, robes &amp; hair dryers"),
+ ("🐕","Dogs welcome","Fenced yard, dog bed, bowls &amp; treats, no pet fee"),
+ ("🪵","Gas log fireplace","Cozy living room with a 55&Prime; smart TV"),
+ ("📺","Media / reading room","Sofa &amp; TV with FireStick; TV includes NFL package"),
+ ("🍳","Full kitchen","Dishwasher, coffee beans, grinder &amp; cookware"),
+ ("📶","Free high-speed Wi-Fi","Central heat &amp; air, washer &amp; dryer"),
+ ("🎲","Games &amp; books","For slow evenings in"),
 ]
 amen_html = "\n".join(f'<li><span class="a-ico" aria-hidden="true">{e}</span><div><strong>{t}</strong><span>{d}</span></div></li>' for e,t,d in amen)
 
@@ -41,13 +41,13 @@ page = f'''<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>River Solace | Dog-Friendly Riverfront Log Cabin in Ellijay, GA</title>
-<meta name="description" content="River Solace is a private, adults-only 2-bedroom, 2-bath log cabin on the Ellijay River in North Georgia. Hot tub, riverside fire pit, fishing from the deck, and up to 2 dogs welcome with no pet fee.">
+<meta name="description" content="River Solace is a private, adults-only 2-bedroom, 2-bath log cabin on the Ellijay River in North Georgia. Riverside fire pit, fishing from the deck, and dogs welcome with no pet fee.">
 <link rel="canonical" href="{SITE}">
 <meta name="theme-color" content="#2f4a3a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="River Solace">
 <meta property="og:title" content="River Solace | Riverfront Log Cabin in Ellijay, GA">
-<meta property="og:description" content="A private, dog-friendly log cabin for up to 4 adults, right on the Ellijay River. Hot tub, fire pit, and fishing from the deck.">
+<meta property="og:description" content="A private, dog-friendly log cabin for up to 4 adults, right on the Ellijay River. Riverside fire pit and fishing from the deck.">
 <meta property="og:url" content="{SITE}">
 <meta property="og:image" content="{SITE}img/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -65,7 +65,7 @@ page = f'''<!doctype html>
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">{json.dumps({
  "@context":"https://schema.org","@type":"VacationRental","name":"River Solace",
- "description":"Private, adults-only, dog-friendly 2-bedroom, 2-bath log cabin on the Ellijay River with a hot tub and riverside fire pit.",
+ "description":"Private, adults-only, dog-friendly 2-bedroom, 2-bath log cabin on the Ellijay River with a riverside fire pit.",
  "image":SITE+"img/og-image.jpg","url":SITE,
  "address":{"@type":"PostalAddress","addressLocality":"Ellijay","addressRegion":"GA","addressCountry":"US"},
  "containsPlace":{"@type":"Accommodation","numberOfBedrooms":2,"numberOfBathroomsTotal":2,"occupancy":{"@type":"QuantitativeValue","maxValue":4}},
@@ -88,12 +88,12 @@ page = f'''<!doctype html>
     <source media="(max-width: 767px)" srcset="img/hero-mobile.webp" type="image/webp">
     <source media="(max-width: 767px)" srcset="img/hero-mobile.jpg">
     <source srcset="img/hero-desktop.webp" type="image/webp">
-    <img src="img/hero-desktop.jpg" alt="River Solace's deck, covered porch and hot tub right on the bank of the Ellijay River" fetchpriority="high" width="1920" height="1028">
+    <img src="img/hero-desktop.jpg" alt="River Solace's deck and covered porch right on the bank of the Ellijay River" fetchpriority="high" width="1920" height="1028">
   </picture>
   <div class="hero-bar">
     <div class="hero-text">
       <p class="hero-title">Riverfront log cabin &middot; Ellijay, GA</p>
-      <p class="hero-sub">2 BR &middot; 2 BA &middot; 4 adults &middot; dogs welcome &middot; hot tub</p>
+      <p class="hero-sub">2 BR &middot; 2 BA &middot; 4 adults &middot; dogs welcome</p>
     </div>
     <div class="hero-cta">
       {book("Check Availability","btn btn-hero")}
@@ -109,13 +109,13 @@ page = f'''<!doctype html>
       <picture><source srcset="logo/logo-riversolace.webp" type="image/webp"><img class="intro-logo" src="logo/logo-riversolace.png" alt="River Solace &mdash; Ellijay, Georgia" width="640" height="587" loading="lazy"></picture>
       <p class="eyebrow">Welcome to River Solace</p>
       <h1>Your own quiet bend of the river</h1>
-      <p>Tucked at the very end of a wooded road outside Ellijay, River Solace is a true full-log cabin with the river running right past the porch. The loudest thing you&rsquo;ll hear is the water.</p>
-      <p>Spend the morning with a cup of fresh-ground coffee in a rocking chair, cast a line straight from the deck, or wander down to the water&rsquo;s edge. When evening comes, light the riverside fire pit, fire up the grill, and finish the night in the hot tub under the trees.</p>
-      <p>Inside, warm pine walls, a gas log fireplace and two king beds make it an easy place to settle in. It&rsquo;s set up for up to four adults, and your dogs are part of the plan: the yard is fenced, and there&rsquo;s no pet fee.</p>
+      <p>At the quiet end of a gravel road outside Ellijay, River Solace is a full-log cabin set right on the bank of the Ellijay River. There are no neighbors on top of you here, and the river does most of the talking.</p>
+      <p>Mornings start with fresh-ground coffee in a rocker on the big covered porch, or with a fishing line dropped straight off the deck. Later, fire up the gas grill, eat at the picnic table, and finish the evening around the stone fire pit by the water.</p>
+      <p>Inside it&rsquo;s all warm logs and easy comfort: a gas log fireplace, a pillow-top king downstairs, a second king in the loft, two baths, and a snug media and reading room. The cabin sleeps four adults (guests 25 and up). Dogs are family here, with a fenced yard, a welcome kit for them, and never a pet fee.</p>
       <p class="note">Good to know: the last stretch is on gravel mountain roads. Four-wheel drive isn&rsquo;t required, but take it slow and steady.</p>
     </div>
     <figure class="intro-photo">
-      <picture><source srcset="img/full/rs-03.webp" type="image/webp"><img src="img/full/rs-03.jpg" alt="Deck seating over the river" loading="lazy" width="1366" height="768"></picture>
+      <picture><source srcset="img/full/rs-05.webp" type="image/webp"><img src="img/full/rs-05.jpg" alt="Deck seating over the river" loading="lazy" width="1366" height="768"></picture>
     </figure>
   </div>
 </section>
@@ -130,7 +130,7 @@ page = f'''<!doctype html>
     <div class="layout">
       <div><h3>Main level</h3><p>King pillow-top bed &middot; full bath with tub/shower &middot; living room with fireplace &middot; full kitchen &middot; media/reading room</p></div>
       <div><h3>Upstairs loft</h3><p>King bed &middot; bathroom &middot; TV with FireStick</p></div>
-      <div><h3>Outside</h3><p>Covered riverfront porch &middot; private hot tub &middot; fire pit by the water &middot; gas grill &amp; picnic table &middot; fenced dog yard</p></div>
+      <div><h3>Outside</h3><p>Covered riverfront porch &middot; fire pit by the water &middot; gas grill &amp; picnic table &middot; fenced dog yard</p></div>
     </div>
     <p class="pawnote">&#128062; Dog guests get a welcome kit too: dog bed, bowls, treats, toys and muddy-paw towels. (No cats, please.)</p>
   </div>
@@ -182,9 +182,8 @@ page = f'''<!doctype html>
     <h2>House rules</h2>
     <ul class="rules">
       <li><strong>Adults only:</strong> up to 4 guests, all age 25 or older.</li>
-      <li><strong>Dogs welcome:</strong> up to 2 dogs, no pet fee, no breed or weight limits. No cats.</li>
+      <li><strong>Dogs welcome:</strong> no pet fee, no breed or weight limits. No cats.</li>
       <li><strong>No parties or events:</strong> River Solace is a quiet retreat; please respect the neighbors and the river.</li>
-      <li><strong>Self check-in:</strong> keyless electronic lock for easy arrivals.</li>
       <li><strong>Getting here:</strong> gravel mountain roads; drive with care.</li>
     </ul>
     <p class="fine">Full policies, rates and cancellation terms are shown when you book.</p>
