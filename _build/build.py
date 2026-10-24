@@ -1,6 +1,6 @@
 import json, html
 BOOK = "https://bookings-slidingrockcabins.escapia.com/Unit/Details/31096#availTab"
-SITE = "https://ryanblindt.github.io/riversolace/"
+SITE = "https://stayatriversolace.com/"
 photos = json.load(open('/workspace/real_estate/ellijay_str/site/_build/photos.json'))
 
 def book(label, cls="btn"):
@@ -40,7 +40,7 @@ page = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <title>River Solace | Dog-Friendly Riverfront Log Cabin in Ellijay, GA</title>
 <meta name="description" content="River Solace is a private, adults-only 2-bedroom, 2-bath log cabin on the Ellijay River in North Georgia. Private hot tub on the deck, riverside fire pit, fishing from the deck, and dogs welcome with no pet fee.">
 <link rel="canonical" href="{SITE}">
@@ -70,7 +70,8 @@ page = f'''<!doctype html>
  "image":SITE+"img/og-image.jpg","url":SITE,
  "address":{"@type":"PostalAddress","addressLocality":"Ellijay","addressRegion":"GA","addressCountry":"US"},
  "containsPlace":{"@type":"Accommodation","numberOfBedrooms":2,"numberOfBathroomsTotal":2,"occupancy":{"@type":"QuantitativeValue","maxValue":4}},
- "petsAllowed":True})}</script>
+ "petsAllowed":True,
+ "amenityFeature":[{"@type":"LocationFeatureSpecification","name":n,"value":True} for n in ["Private hot tub","Riverfront","Fire pit","Covered porch","Gas grill","Fireplace","Free Wi-Fi","Full kitchen","Washer and dryer"]]})}</script>
 </head>
 <body>
 <header class="topbar" id="top">
@@ -79,7 +80,7 @@ page = f'''<!doctype html>
     <span>River Solace</span>
   </a>
   <nav class="nav" aria-label="Sections">
-    <a href="#stay">The Cabin</a><a href="#amenities">Amenities</a><a href="#gallery">Photos</a><a href="#area">Area</a><a href="#rules">Rules</a>
+    <a href="#stay">The Cabin</a><a href="#amenities">Amenities</a><a href="#gallery">Photos</a><a href="#area">Area</a><a href="#rules">Rules</a><a href="guides/">Guides</a>
   </nav>
   {book("Book Now","btn btn-sm")}
 </header>
@@ -174,6 +175,7 @@ page = f'''<!doctype html>
       <article><h3>&#9968;&#65039; Blue Ridge</h3><p>The mountain town of Blue Ridge, with its shops, restaurants, scenic railway and lake, makes a great day trip.</p></article>
       <article><h3>&#127979; Downtown Ellijay</h3><p>Stroll the historic square for local shops, antiques and restaurants, plus seasonal events like the Georgia Apple Festival each October.</p></article>
     </div>
+    <p class="guide-links"><strong>Trip guides:</strong> <a href="guides/florida-to-north-georgia-mountains/">Mountain getaway from Florida</a> &middot; <a href="guides/ellijay-apple-festival-orchards/">Apple Festival &amp; orchards</a> &middot; <a href="guides/fall-colors-ellijay/">Fall colors</a> &middot; <a href="guides/things-to-do-ellijay-blue-ridge/">Things to do</a> &middot; <a href="guides/riverfront-cabin-hot-tub-north-georgia/">Riverfront cabin with hot tub</a></p>
   </div>
 </section>
 
@@ -204,6 +206,7 @@ page = f'''<!doctype html>
 
 <footer class="footer">
   <p>River Solace &middot; Ellijay, Georgia &middot; GA STR Host License #002890</p>
+  <p class="fine"><a href="guides/">Ellijay &amp; North Georgia trip guides</a></p>
   <p class="fine">Additional photos courtesy of Sliding Rock Cabins &middot; &copy; 2026 River Solace</p>
 </footer>
 
