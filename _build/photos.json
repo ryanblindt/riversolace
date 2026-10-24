@@ -1,6 +1,46 @@
 [
  {
   "n": "rs-01",
+  "cap": "Ros\u00e9 on the deck above the river",
+  "w": 1200,
+  "h": 1600,
+  "tw": 480,
+  "th": 640,
+  "src": "r1_deck_rose.jpg",
+  "origin": "ryan"
+ },
+ {
+  "n": "rs-02",
+  "cap": "Evening on the deck by the river",
+  "w": 1152,
+  "h": 864,
+  "tw": 640,
+  "th": 480,
+  "src": "r2_evening_deck_firepit.jpg",
+  "origin": "ryan"
+ },
+ {
+  "n": "rs-03",
+  "cap": "Candlelit dinner on the covered porch",
+  "w": 1600,
+  "h": 1200,
+  "tw": 640,
+  "th": 480,
+  "src": "r3_porch_dining.jpg",
+  "origin": "ryan"
+ },
+ {
+  "n": "rs-04",
+  "cap": "Stone fire pit at the river\u2019s edge",
+  "w": 1200,
+  "h": 1600,
+  "tw": 480,
+  "th": 640,
+  "src": "r4_firepit_river.jpg",
+  "origin": "ryan"
+ },
+ {
+  "n": "rs-05",
   "cap": "Hot tub deck over the Ellijay River",
   "w": 1366,
   "h": 768,
@@ -10,7 +50,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-02",
+  "n": "rs-06",
   "cap": "Deck-side seat right above the river",
   "w": 1366,
   "h": 676,
@@ -20,7 +60,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-03",
+  "n": "rs-07",
   "cap": "Deck seating over the river",
   "w": 1366,
   "h": 768,
@@ -30,7 +70,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-04",
+  "n": "rs-08",
   "cap": "Hot tub with a river view",
   "w": 1366,
   "h": 674,
@@ -40,7 +80,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-05",
+  "n": "rs-09",
   "cap": "Deck, porch and hot tub on the riverbank",
   "w": 1600,
   "h": 857,
@@ -50,7 +90,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-06",
+  "n": "rs-10",
   "cap": "Riverfront setting",
   "w": 1600,
   "h": 830,
@@ -60,7 +100,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-07",
+  "n": "rs-11",
   "cap": "Stone river wall and riverside yard",
   "w": 1600,
   "h": 863,
@@ -70,7 +110,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-08",
+  "n": "rs-12",
   "cap": "Fire pit between the cabin and the river",
   "w": 1366,
   "h": 768,
@@ -80,7 +120,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-09",
+  "n": "rs-13",
   "cap": "Covered porch along the river",
   "w": 1366,
   "h": 768,
@@ -90,7 +130,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-10",
+  "n": "rs-14",
   "cap": "Rocking chairs on the covered porch",
   "w": 1366,
   "h": 768,
@@ -100,7 +140,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-11",
+  "n": "rs-15",
   "cap": "Riverside fire pit",
   "w": 1366,
   "h": 768,
@@ -110,7 +150,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-12",
+  "n": "rs-16",
   "cap": "The Ellijay River",
   "w": 1500,
   "h": 1125,
@@ -120,7 +160,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-13",
+  "n": "rs-17",
   "cap": "The river beside the cabin",
   "w": 1366,
   "h": 768,
@@ -130,7 +170,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-14",
+  "n": "rs-18",
   "cap": "Private hot tub on the deck",
   "w": 1600,
   "h": 1359,
@@ -140,7 +180,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-15",
+  "n": "rs-19",
   "cap": "Porch dining",
   "w": 1600,
   "h": 1320,
@@ -150,7 +190,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-16",
+  "n": "rs-20",
   "cap": "Covered porch with picnic table",
   "w": 1366,
   "h": 768,
@@ -160,7 +200,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-17",
+  "n": "rs-21",
   "cap": "Gas grill on the deck",
   "w": 1366,
   "h": 768,
@@ -170,7 +210,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-18",
+  "n": "rs-22",
   "cap": "Living room with gas log fireplace",
   "w": 1366,
   "h": 768,
@@ -180,7 +220,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-19",
+  "n": "rs-23",
   "cap": "Fireplace and big windows",
   "w": 1366,
   "h": 643,
@@ -190,7 +230,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-20",
+  "n": "rs-24",
   "cap": "Living room and stairs to the loft",
   "w": 1366,
   "h": 768,
@@ -200,7 +240,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-21",
+  "n": "rs-25",
   "cap": "Fully equipped kitchen",
   "w": 1600,
   "h": 1454,
@@ -210,7 +250,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-22",
+  "n": "rs-26",
   "cap": "Coffee station",
   "w": 1366,
   "h": 768,
@@ -220,7 +260,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-23",
+  "n": "rs-27",
   "cap": "Dining nook",
   "w": 1366,
   "h": 768,
@@ -230,7 +270,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-24",
+  "n": "rs-28",
   "cap": "Media / reading room",
   "w": 1366,
   "h": 768,
@@ -240,7 +280,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-25",
+  "n": "rs-29",
   "cap": "Main-level king bedroom",
   "w": 1366,
   "h": 768,
@@ -250,7 +290,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-26",
+  "n": "rs-30",
   "cap": "Bedroom with dresser and TV",
   "w": 1279,
   "h": 569,
@@ -260,7 +300,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-27",
+  "n": "rs-31",
   "cap": "Upstairs loft king bedroom",
   "w": 1366,
   "h": 768,
@@ -270,7 +310,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-28",
+  "n": "rs-32",
   "cap": "Loft king bed",
   "w": 1600,
   "h": 1402,
@@ -280,7 +320,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-29",
+  "n": "rs-33",
   "cap": "Main-level bathroom",
   "w": 1366,
   "h": 768,
@@ -290,7 +330,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-30",
+  "n": "rs-34",
   "cap": "Loft bathroom",
   "w": 1366,
   "h": 768,
@@ -300,7 +340,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-31",
+  "n": "rs-35",
   "cap": "Cabin and gravel drive",
   "w": 1500,
   "h": 1000,
@@ -310,7 +350,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-32",
+  "n": "rs-36",
   "cap": "Cabin exterior",
   "w": 1366,
   "h": 768,
@@ -320,7 +360,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-33",
+  "n": "rs-37",
   "cap": "Cabin tucked in the trees",
   "w": 1366,
   "h": 768,
@@ -330,7 +370,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-34",
+  "n": "rs-38",
   "cap": "Front entry",
   "w": 1366,
   "h": 768,
@@ -340,7 +380,7 @@
   "origin": "vrbo"
  },
  {
-  "n": "rs-35",
+  "n": "rs-39",
   "cap": "The River Solace sign",
   "w": 1366,
   "h": 768,
@@ -350,7 +390,7 @@
   "origin": "src"
  },
  {
-  "n": "rs-36",
+  "n": "rs-40",
   "cap": "Riverside swing",
   "w": 1366,
   "h": 768,

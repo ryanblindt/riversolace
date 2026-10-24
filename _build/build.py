@@ -7,7 +7,7 @@ def book(label, cls="btn"):
     return f'<a class="{cls}" href="{BOOK}" target="_blank" rel="noopener">{label}</a>'
 
 gallery = "\n".join(
-    f'''<a class="g-item{' g-wide' if i in (0,4,17,30) else ''}" href="img/full/{p["n"]}.jpg" data-webp="img/full/{p["n"]}.webp" data-cap="{html.escape(p["cap"])}" data-i="{i}">
+    f'''<a class="g-item{' g-wide' if i in (0,8,21,34) else ''}" href="img/full/{p["n"]}.jpg" data-webp="img/full/{p["n"]}.webp" data-cap="{html.escape(p["cap"])}" data-i="{i}">
   <picture><source srcset="img/thumb/{p["n"]}.webp" type="image/webp"><img src="img/thumb/{p["n"]}.jpg" alt="{html.escape(p["cap"])}" width="{p["tw"]}" height="{p["th"]}" loading="lazy" decoding="async"></picture></a>'''
     for i, p in enumerate(photos))
 
@@ -204,7 +204,7 @@ page = f'''<!doctype html>
 
 <footer class="footer">
   <p>River Solace &middot; Ellijay, Georgia &middot; GA STR Host License #002890</p>
-  <p class="fine">Photos courtesy of Sliding Rock Cabins &middot; &copy; 2026 River Solace</p>
+  <p class="fine">Additional photos courtesy of Sliding Rock Cabins &middot; &copy; 2026 River Solace</p>
 </footer>
 
 <div class="mobile-book">{book("Check Availability","btn btn-block")}</div>
