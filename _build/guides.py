@@ -76,9 +76,9 @@ P=[
 <article><h3>Game day</h3><p>The TV at River Solace includes the NFL package, so Sundays can be football on the couch and dinner on the porch.</p></article>
 <article><h3>Winter &amp; holidays</h3><p>Quieter months mean easier dates, crisp nights, the gas log fireplace and the hot tub. A cozy Christmas or New Year's cabin trip.</p></article>
 </div><p class="fine">Hours and seasons change; check each business before you go.</p></div></section>'''),
-("riverfront-cabin-hot-tub-north-georgia","Riverfront Cabin with Hot Tub in North Georgia | River Solace",
- "Looking for a riverfront cabin with a hot tub in North Georgia? River Solace in Ellijay has a private hot tub on the deck, a fire pit by the river and fishing from the porch.",
- "Riverfront cabin with hot tub","A riverfront cabin with a hot tub in North Georgia",
+("riverfront-cabin-hot-tub-north-georgia","Georgia Mountain Cabin on the River with Hot Tub | River Solace, Ellijay",
+ "Looking for a Georgia mountain cabin on the river with a hot tub? River Solace in Ellijay has a private hot tub on the deck, a fire pit by the river and fishing from the porch.",
+ "Mountain cabin on the river","A Georgia mountain cabin on the river, with a hot tub",
  "Plenty of North Georgia cabins have a hot tub. Fewer sit right on the water. River Solace has both.",
  '''<section class="section"><div class="wrap narrow"><h2>What makes River Solace different</h2>
 <ul class="rules"><li><strong>On the Ellijay River:</strong> waterfront at the end of a private road, with a big covered porch facing the water.</li>
@@ -89,6 +89,18 @@ P=[
 <li><strong>Dog friendly:</strong> fenced yard, no pet fee, no breed or weight limits.</li>
 <li><strong>Cozy inside:</strong> gas log fireplace, full kitchen, fast Wi-Fi, and a TV with the NFL package.</li></ul>
 <p>It is a good fit for anniversaries, couples' weekends, fall leaf trips and winter escapes. It is not a party house: no events, and quiet is the point.</p></div></section>'''),
+("blue-ridge-ga-cabin-alternative-ellijay","Blue Ridge GA Cabin Alternative: Riverfront in Ellijay | River Solace",
+ "Searching for Blue Ridge, GA cabins? River Solace is a riverfront cabin in Ellijay, about 15 miles and 22 minutes from Blue Ridge, with a private hot tub and fire pit by the river.",
+ "Blue Ridge cabin alternative","Blue Ridge GA cabin alternative: riverfront in Ellijay",
+ "Love the idea of a Blue Ridge cabin weekend? Ellijay is Blue Ridge's quieter neighbor, close enough for day trips and right on the river.",
+ '''<section class="section"><div class="wrap narrow"><h2>How close is Ellijay to Blue Ridge?</h2>
+<p>Downtown Ellijay to downtown Blue Ridge is about 15.5 miles, roughly 22 minutes by car up GA-515 (OpenStreetMap OSRM routing, no traffic). Easy for dinner, shopping or the train, then back to the river for the night.</p>
+<h2>Why stay in Ellijay instead</h2>
+<ul class="rules"><li><strong>On the water:</strong> River Solace sits on the Ellijay River, with fishing from the porch and a fire pit by the river.</li>
+<li><strong>Quieter base:</strong> Ellijay is a smaller town known for apple orchards and wineries, with less traffic than downtown Blue Ridge on peak weekends.</li>
+<li><strong>Both towns in one trip:</strong> orchards on Highway 52 in Ellijay, then the Blue Ridge Scenic Railway, Lake Blue Ridge and downtown shops.</li>
+<li><strong>Hot tub and game day:</strong> private hot tub on the deck, and a TV with the NFL package.</li></ul>
+<p>More ideas: <a href="/guides/things-to-do-ellijay-blue-ridge/">Things to do in Ellijay and Blue Ridge</a>.</p></div></section>'''),
 ]
 STYLE='<style>.table-wrap{overflow-x:auto}.drive{width:100%;border-collapse:collapse;margin:12px 0}.drive th,.drive td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(90,62,43,.15)}.btn-ghost{background:transparent;color:inherit;border:1px solid currentColor}.crumbs{font-size:.85rem;margin-bottom:.6em}.guide-hero{padding:56px 0 24px}</style>'
 def head(title,desc,url,extra=""):

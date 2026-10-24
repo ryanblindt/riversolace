@@ -41,7 +41,7 @@ page = f'''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>River Solace | Dog-Friendly Riverfront Log Cabin in Ellijay, GA</title>
+<title>River Solace | Riverfront Cabin in Ellijay, GA near Blue Ridge | Hot Tub</title>
 <meta name="description" content="River Solace is a private, adults-only 2-bedroom, 2-bath log cabin on the Ellijay River in North Georgia. Private hot tub on the deck, riverside fire pit, fishing from the deck, and dogs welcome with no pet fee.">
 <link rel="canonical" href="{SITE}">
 <meta name="theme-color" content="#2f4a3a">
@@ -65,7 +65,7 @@ page = f'''<!doctype html>
 <link rel="preload" as="image" href="img/hero-desktop.webp" media="(min-width: 768px)">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">{json.dumps({
- "@context":"https://schema.org","@type":"VacationRental","name":"River Solace",
+ "@context":"https://schema.org","@type":"VacationRental","name":"River Solace","alternateName":["River Solace Cabin","River Solace Ellijay"],
  "description":"Private, adults-only, dog-friendly 2-bedroom, 2-bath log cabin on the Ellijay River with a private hot tub on the deck and a riverside fire pit.",
  "image":SITE+"img/og-image.jpg","url":SITE,
  "address":{"@type":"PostalAddress","addressLocality":"Ellijay","addressRegion":"GA","addressCountry":"US"},
@@ -113,6 +113,7 @@ page = f'''<!doctype html>
       <h1>Your own quiet bend of the river</h1>
       <p>At the quiet end of a gravel road outside Ellijay, River Solace is a full-log cabin set right on the bank of the Ellijay River. There are no neighbors on top of you here, and the river does most of the talking.</p>
       <p>Mornings start with fresh-ground coffee in a rocker on the big covered porch, or with a fishing line dropped straight off the deck. Later, fire up the gas grill, eat at the picnic table, and finish the evening around the stone fire pit by the water, then slip into the private hot tub on the deck.</p>
+      <p>River Solace is a 2-bedroom riverfront mountain cabin in Ellijay, Georgia, about 20 minutes from downtown Blue Ridge, managed and booked through Sliding Rock Cabins.</p>
       <p>Inside it&rsquo;s all warm logs and easy comfort: a gas log fireplace, a pillow-top king downstairs, a second king in the loft, two baths, and a snug media and reading room. The cabin sleeps four adults (guests 25 and up). Dogs are family here, with a fenced yard, a welcome kit for them, and never a pet fee.</p>
       <p class="note">Good to know: the last stretch is on gravel mountain roads. Four-wheel drive isn&rsquo;t required, but take it slow and steady.</p>
     </div>
@@ -175,7 +176,7 @@ page = f'''<!doctype html>
       <article><h3>&#9968;&#65039; Blue Ridge</h3><p>The mountain town of Blue Ridge, with its shops, restaurants, scenic railway and lake, makes a great day trip.</p></article>
       <article><h3>&#127979; Downtown Ellijay</h3><p>Stroll the historic square for local shops, antiques and restaurants, plus seasonal events like the Georgia Apple Festival each October.</p></article>
     </div>
-    <p class="guide-links"><strong>Trip guides:</strong> <a href="guides/florida-to-north-georgia-mountains/">Mountain getaway from Florida</a> &middot; <a href="guides/ellijay-apple-festival-orchards/">Apple Festival &amp; orchards</a> &middot; <a href="guides/fall-colors-ellijay/">Fall colors</a> &middot; <a href="guides/things-to-do-ellijay-blue-ridge/">Things to do</a> &middot; <a href="guides/riverfront-cabin-hot-tub-north-georgia/">Riverfront cabin with hot tub</a></p>
+    <p class="guide-links"><strong>Trip guides:</strong> <a href="guides/florida-to-north-georgia-mountains/">Mountain getaway from Florida</a> &middot; <a href="guides/ellijay-apple-festival-orchards/">Apple Festival &amp; orchards</a> &middot; <a href="guides/fall-colors-ellijay/">Fall colors</a> &middot; <a href="guides/things-to-do-ellijay-blue-ridge/">Things to do</a> &middot; <a href="guides/riverfront-cabin-hot-tub-north-georgia/">Georgia mountain cabin on the river</a> &middot; <a href="guides/blue-ridge-ga-cabin-alternative-ellijay/">Blue Ridge cabin alternative</a></p>
   </div>
 </section>
 
