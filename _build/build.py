@@ -1,5 +1,5 @@
 import json, html
-BOOK = "https://bookings-slidingrockcabins.escapia.com/Unit/Details/31096#availTab"
+BOOK = "https://slidingrockcabins.com/property-item/river-solace-pet-friendly-adults-only-riverfront-cabin-rental/"
 SITE = "https://stayatriversolace.com/"
 photos = json.load(open('/workspace/real_estate/ellijay_str/site/_build/photos.json'))
 
@@ -99,8 +99,23 @@ page = f'''<!doctype html>
     </div>
     <div class="hero-cta">
       {book("Check Availability","btn btn-hero")}
-      <span class="fine hero-fine">Reservations handled by Sliding Rock Cabins</span>
+      <span class="fine hero-fine">$129/night with code RSO129 on <a href="#offer">select dates</a> &middot; enter code at checkout</span>
     </div>
+  </div>
+</section>
+
+<section class="promo" id="offer" aria-label="RSO129 offer">
+  <div class="wrap promo-inner">
+    <p class="eyebrow">Winter rate</p>
+    <h2>$129/night with code <span class="promo-code">RSO129</span></h2>
+    <p>Valid for stays on these dates only:</p>
+    <ul class="promo-dates">
+      <li>Nov 29 &ndash; Dec 19, 2026</li>
+      <li>Jan 3 &ndash; Feb 11, 2027 (excludes MLK weekend, Jan 15&ndash;17)</li>
+      <li>Feb 15 &ndash; Feb 28, 2027</li>
+    </ul>
+    <p class="promo-actions">{book("Book on Sliding Rock Cabins","btn")} <button type="button" class="btn btn-ghost copy-code" data-code="RSO129">Copy code RSO129</button></p>
+    <p class="fine">Enter code RSO129 at checkout on the Sliding Rock Cabins booking page.</p>
   </div>
 </section>
 

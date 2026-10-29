@@ -1,7 +1,7 @@
 import json, os, datetime
 ROOT='/workspace/real_estate/ellijay_str/site'
 SITE="https://stayatriversolace.com/"
-BOOK="https://bookings-slidingrockcabins.escapia.com/Unit/Details/31096#availTab"
+BOOK="https://slidingrockcabins.com/property-item/river-solace-pet-friendly-adults-only-riverfront-cabin-rental/"
 TODAY=datetime.date.today().isoformat()
 def btn(l,c="btn"): return f'<a class="{c}" href="{BOOK}" target="_blank" rel="noopener">{l}</a>'
 DRIVE=[("Tallahassee","338","6.9"),("Panama City","364","7.4"),("Pensacola","398","7.6"),("Gainesville","408","7.6"),("Jacksonville","423","7.8"),("Orlando","515","9.4"),("Tampa","533","9.8"),("Miami","739","13.6"),("Atlanta (for reference)","78","1.6")]
